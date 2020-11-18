@@ -1,0 +1,131 @@
+html{
+    min-width: 350px;
+}
+body {
+    margin: 0;    
+    padding: 0;
+    width: 100%;
+    color: black;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    line-height: 1em;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: black;
+    line-height: 1.5em; 
+    width: 100%;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;    
+}
+
+#navbar a:hover {
+    color: black;
+    background-color: brown;
+}
+
+#welcome-section {    
+    margin: 0;
+    padding: 0;
+    display: flex;  
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;  
+    border-bottom: 5px solid black; 
+    font-size:1.4em;
+    
+}
+
+#projects {    
+    background-color: brown;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 5rem 1.5rem;
+    text-align: center;    
+}
+
+#projects-grid {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    grid-gap: 20px;
+    min-height: 100vh;    
+}
+
+.a-projects {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 5px solid black; 
+    border-radius: 25px;
+}
+
+.a-projects:hover {
+    text-decoration: none;
+    color: black;
+    background-color: red;
+}
+
+.img-project {
+    width: 90%;
+    height: 72%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#contact {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url(https://cdn.wallpapersafari.com/39/37/kDLtgT.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: red;    
+    height: 160vh;    
+}
+
+#content-div {
+    background-color: rgba(2, 0,0, 0.7);
+    padding: 30px;
+    border-radius: 25px;
+    border: 5px solid red;
+    text-align: center;
+}
+
+.a-content {
+    text-decoration: none;
+    color: red;
+}
+
+.a-content:hover {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: red;
+    padding: 20px;
+}
+
+@media (max-width: 950px) {
+    #projects-grid {
+        margin: 2px;
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }    
+}
